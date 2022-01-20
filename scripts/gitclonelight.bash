@@ -2,7 +2,8 @@
 
 # gitclonelight
 #
-# Description: update existing git folder by cloning
+# Description:
+# Update existing git folder by cloning
 # without the whole git history (--depth=1).
 # So you avoid downloading large amount of data.
 #
@@ -25,3 +26,4 @@ rm -rf $FOLD
 
 # git clone without history
 git clone --depth=1 $URL
+
