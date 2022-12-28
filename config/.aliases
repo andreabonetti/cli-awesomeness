@@ -1,4 +1,6 @@
+# -----------------------------------------------------------
 # aliases for bash
+# -----------------------------------------------------------
 
 # list (ls)
 alias l='ls --colour=auto'
@@ -62,4 +64,4 @@ alias count='find . -type f | wc -l' # recursively count files
 alias cpr='rsync -Pa' # copy with progress
 alias kill='kill -9' # kill 'em all
 alias bc='bc -l' # bc with real numbers
-alias checklist_clean="sed -i '' 's/\[.\]/[ ]/g' " # usage: clean_checklist my_checklist.md
+alias clean_checklist="sed -i '' 's/\[.\]/[ ]/g' " # usage: clean_checklist my_checklist.md
