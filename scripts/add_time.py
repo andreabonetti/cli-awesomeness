@@ -1,6 +1,6 @@
 """add_time"""
 
-from clia import *
+from cliapy import *
 import sys
 
 if __name__ == '__main__':
