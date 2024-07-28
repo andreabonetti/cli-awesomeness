@@ -68,4 +68,4 @@ alias bc='bc -l' # bc with real numbers
 alias clean_checklist="sed -i '' 's/\[.\]/[ ]/g' " # usage: clean_checklist my_checklist.md
 
 # cliapy
-alias add_time='python3 $PATH_CLIA_SCRIPTS/add_time.py'
+alias add_date='python3 $PATH_CLIA_SCRIPTS/add_date.py'

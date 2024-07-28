@@ -4,4 +4,4 @@ from cliapy import *
 import sys
 
 if __name__ == '__main__':
-    add_time(sys.argv[1])
+    add_date(sys.argv[1])

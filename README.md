@@ -17,3 +17,13 @@ Install the package `cliapy` (in editable mode):
 ```
 pip install -e cliapy
 ```
+
+## Enjoy!
+
+Example:
+```
+> touch my_awesome_file.txt
+> add_date my_awesome_file.txt 
+> ls
+2024_07_28_my_awesome_file.txt
+```
