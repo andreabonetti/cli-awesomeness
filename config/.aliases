@@ -71,3 +71,9 @@ alias clean_checklist="sed -i '' 's/\[.\]/[ ]/g' " # usage: clean_checklist my_c
 
 # cliapy
 alias add_date='python3 $PATH_CLIA_SCRIPTS/add_date.py'
+
+# marp
+alias marphtml='marp --theme css/rose-pine-andrea.css --html' # usage: marphtml slides.md
+alias marppdf='marp --theme css/rose-pine-andrea.css --html --pdf' # usage: marppdf slides.md
+alias marppreview='marp --theme css/rose-pine-andrea.css --html --preview' # usage: marppreview slides.md
+
