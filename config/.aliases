@@ -49,6 +49,8 @@ alias grepe='grep -i "error"'
 alias grepew='grep -i "warning\|error"'
 
 # tmux
+alias tmuxnew='tmux new -s' # usage: tmuxnew mysession
+alias tmuxattach='tmux a -t' # usage: tmuxnew mysession
 alias tmuxkill='tmux kill-session -t ' # usage: tmuxkill mysession
 
 # scripts from the CLIA repository
