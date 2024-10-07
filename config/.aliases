@@ -49,9 +49,10 @@ alias grepe='grep -i "error"'
 alias grepew='grep -i "warning\|error"'
 
 # tmux
-alias tmuxnew='tmux new -s' # usage: tmuxnew mysession
-alias tmuxattach='tmux a -t' # usage: tmuxnew mysession
-alias tmuxkill='tmux kill-session -t ' # usage: tmuxkill mysession
+alias tmux-new='tmux new -s' # usage: tmux-new mysession
+alias tmux-create='tmux new -s' # usage: tmux-create mysession
+alias tmux-attach='tmux a -t' # usage: tmux-attach mysession
+alias tmux-kill='tmux kill-session -t ' # usage: tmux-kill mysession
 
 # scripts from the CLIA repository
 alias gitclonelight='source $PATH_CLIA_SCRIPTS/gitclonelight.bash'
@@ -70,10 +71,10 @@ alias bc='bc -l' # bc with real numbers
 alias clean_checklist="sed -i '' 's/\[.\]/[ ]/g' " # usage: clean_checklist my_checklist.md
 
 # cliapy
-alias add_date='python3 $PATH_CLIA_SCRIPTS/add_date.py'
+alias add_date='python $PATH_CLIA_SCRIPTS/add_date.py'
 
 # marp
-alias marphtml='marp --theme css/rose-pine-andrea.css --html' # usage: marphtml slides.md
-alias marppdf='marp --theme css/rose-pine-andrea.css --html --pdf' # usage: marppdf slides.md
-alias marppreview='marp --theme css/rose-pine-andrea.css --html --preview' # usage: marppreview slides.md
+alias marp-html='marp --html --allow-local-files --theme' # usage: marphtml css/pink.css slides.md
+alias marp-pdf='marp --html --pdf --allow-local-files --theme' # usage: marppdf css/pink.css slides.md
+alias marp-preview='marp --html --preview --allow-local-files --theme' # usage: css/pink.css slides.md
 
