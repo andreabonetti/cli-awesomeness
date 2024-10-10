@@ -36,6 +36,7 @@ alias git_submodule_update='git submodule update --recursive'
 alias git_submodule_init='git submodule update --recursive --init'
 alias gitrs='git rebase ; git submodule update --recursive --init'
 alias gitsrp='git stash ; gitrs ; git stash pop ; gits' # use carefully
+alias gitstats='git shortlog --summary --numbered --all --no-merges'
 
 # svn
 alias svns='svn status'
