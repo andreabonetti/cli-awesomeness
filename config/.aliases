@@ -32,11 +32,14 @@ alias gitr='git rebase'
 alias gitl='git log --stat'
 alias gitll='git log -p'
 alias gitlll='git log --pretty=oneline'
-alias git_submodule_update='git submodule update --recursive'
-alias git_submodule_init='git submodule update --recursive --init'
+alias gitlg='git log --graph --oneline --all'
 alias gitrs='git rebase ; git submodule update --recursive --init'
 alias gitsrp='git stash ; gitrs ; git stash pop ; gits' # use carefully
 alias gitstats='git shortlog --summary --numbered --all --no-merges'
+alias gitd='git diff'
+alias gito='git checkout'
+alias git-submodule-update='git submodule update --recursive'
+alias git-submodule-init='git submodule update --recursive --init'
 
 # svn
 alias svns='svn status'
@@ -78,4 +81,12 @@ alias add_date='python $PATH_CLIA_SCRIPTS/add_date.py'
 alias marp-html='marp --html --allow-local-files --theme' # usage: marphtml css/pink.css slides.md
 alias marp-pdf='marp --html --pdf --allow-local-files --theme' # usage: marppdf css/pink.css slides.md
 alias marp-preview='marp --html --preview --allow-local-files --theme' # usage: css/pink.css slides.md
+
+# ruff
+alias ruff-format='ruff format'
+alias ruff-check='ruff check'
+alias ruff-check-fix='ruff check --fix'
+
+# psmem
+alias ps-mem='ps -eo pmem,pcpu,pid,command -m'
 
