@@ -78,15 +78,15 @@ alias clean_checklist="sed -i '' 's/\[.\]/[ ]/g' " # usage: clean_checklist my_c
 alias add_date='python $PATH_CLIA_SCRIPTS/add_date.py'
 
 # marp
-alias marp-html='marp --html --allow-local-files --theme' # usage: marphtml css/pink.css slides.md
-alias marp-pdf='marp --html --pdf --allow-local-files --theme' # usage: marppdf css/pink.css slides.md
-alias marp-preview='marp --html --preview --allow-local-files --theme' # usage: css/pink.css slides.md
+alias marp-html='marp --heml --allow-local-files --theme' # usage: marp-html css/pink.css slides.md
+alias marp-pdf='marp --pdf --allow-local-files --theme' # usage: marp-pdf css/pink.css slides.md
+alias marp-preview='marp --preview --allow-local-files --theme' # usage: marp-preview css/pink.css slides.md
 
 # ruff
 alias ruff-format='ruff format'
 alias ruff-check='ruff check'
 alias ruff-check-fix='ruff check --fix'
+alias ruff-all='ruff format ; ruff check --fix'
 
 # psmem
 alias ps-mem='ps -eo pmem,pcpu,pid,command -m'
-
