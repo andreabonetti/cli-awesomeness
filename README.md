@@ -2,6 +2,11 @@
 
 Useful stuff for the command line (CLI)
 
+![alt text](pics/gabriel-heinzer-xbEVM6oJ1Fs-unsplash.jpg)
+
+Photo by [Gabriel Heinzer](https://unsplash.com/@6heinz3r?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) on [Unsplash](https://unsplash.com/photos/green-and-black-digital-device-xbEVM6oJ1Fs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
+
+
 ## Configuration
 
 Assuming that you're using `bash`, add the following lines to `.bash_profile`:
