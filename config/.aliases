@@ -40,6 +40,7 @@ alias gitd='git diff'
 alias gito='git checkout'
 alias git-submodule-update='git submodule update --recursive'
 alias git-submodule-init='git submodule update --recursive --init'
+alias git-undo-last-commit='git reset --soft HEAD~1'
 
 # svn
 alias svns='svn status'
