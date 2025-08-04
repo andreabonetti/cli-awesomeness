@@ -91,3 +91,17 @@ alias ruff-all='ruff format ; ruff check --fix'
 
 # psmem
 alias ps-mem='ps -eo pmem,pcpu,pid,command -m'
+
+# kill
+# usage: kill_by_name process_name
+kill_by_name() {
+  local pids
+  pids=$(pgrep "$1")
+
+  if [[ -z "$pids" ]]; then
+    echo "No process found matching the name \"$1\""
+  else
+    echo "$pids" | xargs kill -9
+    echo "Killed processes with name \"$1\" and PID $pids"
+  fi
+}
