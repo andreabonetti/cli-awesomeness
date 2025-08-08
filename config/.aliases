@@ -39,9 +39,9 @@ alias gitsrp='git stash ; gitrs ; git stash pop ; gits' # use carefully
 alias gitstats='git shortlog --summary --numbered --all --no-merges'
 alias gitd='git diff'
 alias gito='git checkout'
-alias git-submodule-update='git submodule update --recursive'
-alias git-submodule-init='git submodule update --recursive --init'
-alias git-undo-last-commit='git reset --soft HEAD~1'
+alias git_submodule_update='git submodule update --recursive'
+alias git_submodule_init='git submodule update --recursive --init'
+alias git_undo_last_commit='git reset --soft HEAD~1'
 
 # svn
 alias svns='svn status'
@@ -55,10 +55,10 @@ alias grepe='grep -i "error"'
 alias grepew='grep -i "warning\|error"'
 
 # tmux
-alias tmux-new='tmux new -s' # usage: tmux-new mysession
-alias tmux-create='tmux new -s' # usage: tmux-create mysession
-alias tmux-attach='tmux a -t' # usage: tmux-attach mysession
-alias tmux-kill='tmux kill-session -t ' # usage: tmux-kill mysession
+alias tmux_new='tmux new -s' # usage: tmux-new mysession
+alias tmux_create='tmux new -s' # usage: tmux-create mysession
+alias tmux_attach='tmux a -t' # usage: tmux-attach mysession
+alias tmux_kill='tmux kill-session -t ' # usage: tmux-kill mysession
 
 # scripts from the CLIA repository
 alias gitclonelight='source $PATH_CLIA_SCRIPTS/gitclonelight.bash'
@@ -80,18 +80,18 @@ alias clean_checklist="sed -i '' 's/\[.\]/[ ]/g' " # usage: clean_checklist my_c
 alias add_date='python $PATH_CLIA_SCRIPTS/add_date.py'
 
 # marp
-alias marp-html='marp --heml --allow-local-files --theme' # usage: marp-html css/pink.css slides.md
-alias marp-pdf='marp --pdf --allow-local-files --theme' # usage: marp-pdf css/pink.css slides.md
-alias marp-preview='marp --preview --allow-local-files --theme' # usage: marp-preview css/pink.css slides.md
+alias marp_html='marp --heml --allow-local-files --theme' # usage: marp-html css/pink.css slides.md
+alias marp_pdf='marp --pdf --allow-local-files --theme' # usage: marp-pdf css/pink.css slides.md
+alias marp_preview='marp --preview --allow-local-files --theme' # usage: marp-preview css/pink.css slides.md
 
 # ruff
-alias ruff-format='ruff format'
-alias ruff-check='ruff check'
-alias ruff-check-fix='ruff check --fix'
-alias ruff-all='ruff format ; ruff check --fix'
+alias ruff_format='ruff format'
+alias ruff_check='ruff check'
+alias ruff_check_fix='ruff check --fix'
+alias ruff_all='ruff format ; ruff check --fix'
 
 # psmem
-alias ps-mem='ps -eo pmem,pcpu,pid,command -m'
+alias ps_mem='ps -eo pmem,pcpu,pid,command -m'
 
 # kill
 # usage: kill_by_name process_name
