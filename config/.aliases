@@ -9,6 +9,9 @@ alias ll='ls -la'
 alias lr='ls -ltr'
 alias lh='ls -lh'
 
+# less
+alias less='less -R' # for ANSI escape codes
+
 # tar
 # usage: targz archive-name.tar.gz file-name
 # usage: targz archive-name.tar.gz directory-name
