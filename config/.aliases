@@ -12,6 +12,9 @@ alias lh='ls -lh'
 # less
 alias less='less -R' # for ANSI escape codes
 
+# diff
+alias diff='diff --color'
+
 # tar
 # usage: targz archive-name.tar.gz file-name
 # usage: targz archive-name.tar.gz directory-name
