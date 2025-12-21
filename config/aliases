@@ -115,3 +115,17 @@ kill_by_name() {
     echo "Killed processes with name \"$1\" and PID $pids"
   fi
 }
+
+# quarto
+# ...usage: quarto_preview my_document.qmd
+quarto_preview() {
+  quarto preview "$1"
+}
+# ...usage: quarto_render_pdf my_document.qmd
+quarto_render_pdf() {
+  quarto render "$1" --to pdf
+}
+# ...usage: quarto_render_docx my_document.qmd
+quarto_render_docx() {
+  quarto render "$1" --to docx
+}
