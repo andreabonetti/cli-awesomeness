@@ -117,15 +117,23 @@ kill_by_name() {
 }
 
 # quarto
-# ...usage: quarto_preview my_document.qmd
+# ...usage:
+# quarto_preview my_document.qmd
+# quarto_render_pdf my_document.qmd
+# quarto_render_docx my_document.qmd
 quarto_preview() {
   quarto preview "$1"
 }
-# ...usage: quarto_render_pdf my_document.qmd
 quarto_render_pdf() {
   quarto render "$1" --to pdf
 }
-# ...usage: quarto_render_docx my_document.qmd
 quarto_render_docx() {
   quarto render "$1" --to docx
 }
+quarto_render_html() {
+  quarto render "$1" --to html
+}
+# ...aliases
+alias quarto_export_pdf='quarto_render_pdf'
+alias quarto_export_docx='quarto_render_docx'
+alias quarto_export_html='quarto_render_html'

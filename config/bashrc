@@ -1,0 +1,42 @@
+# ==================================
+# variables
+# ==================================
+
+# stop printing that bash is deprecated
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
+# command line awesomeness (clia)
+export PATH_CLIA="/path/to/cli-awesomeness"  # <-- replace this
+export PATH_CLIA_SCRIPTS="$PATH_CLIA/scripts"
+export PATH_CLIA_CONFIG="$PATH_CLIA/config"
+
+# encoding: UTF-8
+export LC_ALL=en_US.UTF-8  
+export LANG=en_US.UTF-8
+
+# updating PATH with apps in non-standard location
+export PATH="/opt/local/bin:$PATH"
+export PATH="/opt/local/sbin:$PATH"
+export PATH="/opt/homebrew/bin:$PATH"
+export PATH="/opt/homebrew/sbin:$PATH"
+
+# colorized output for ls
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
+
+# ==================================
+# customization
+# ==================================
+
+# aliases
+source $PATH_CLIA_CONFIG/aliases
+source "/path/to/private/aliases"  # <-- replace this
+
+# source python venv
+VENV_PATH=~/env312/bin/activate
+if [ -f $VENV_PATH ]; then
+    source $VENV_PATH
+fi
+
+# load OrbStack’s shell integration
+source ~/.orbstack/shell/init.bash 2>/dev/null || :
