@@ -8,6 +8,8 @@ Photo by [Gabriel Heinzer](https://unsplash.com/@6heinz3r?utm_content=creditCopy
 
 ## config
 
+Config files aka dot files:
+
 - [aliases](config/aliases): useful aliases
 - [bash_profile](config/bash_profile): sourcing [bashrc](config/bashrc)
 - [bashrc](config/bashrc): useful bash customization
@@ -42,11 +44,4 @@ Example:
 > add_date my_awesome_file.txt 
 > ls
 2024_07_28_my_awesome_file.txt
-```
-
-## tmux
-
-Create a symbolic link to load `.tmux.conf`
-```
-ln -s config/.tmux.conf ~/.tmux.conf
 ```
