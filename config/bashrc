@@ -40,3 +40,7 @@ fi
 
 # load OrbStack’s shell integration
 source ~/.orbstack/shell/init.bash 2>/dev/null || :
+
+# use arrow up/down to search command history
+bind '"\e[A": history-search-backward'
+bind '"\e[B": history-search-forward'
