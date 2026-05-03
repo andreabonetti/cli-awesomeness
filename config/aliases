@@ -65,15 +65,10 @@ alias tmux_create='tmux new -s' # usage: tmux-create mysession
 alias tmux_attach='tmux a -t' # usage: tmux-attach mysession
 alias tmux_kill='tmux kill-session -t ' # usage: tmux-kill mysession
 
-# scripts from the CLIA repository
-alias gitclonelight='source $PATH_CLIA_SCRIPTS/gitclonelight.bash'
 
 # history
 alias h="history | sed 's/.\{7\}//'"
 alias hg='h | grep'
-
-# cliapy
-alias add_date='python $PATH_CLIA_SCRIPTS/add_date.py'
 
 # marp
 alias marp_html='marp --heml --allow-local-files --theme' # usage: marp-html css/pink.css slides.md
@@ -139,3 +134,35 @@ alias cpr='rsync -Pa' # copy with progress
 alias kill='kill -9' # kill 'em all
 alias bc='bc -l' # bc with real numbers
 alias clean_checklist="sed -i '' 's/\[.\]/[ ]/g' " # usage: clean_checklist my_checklist.md
+
+# -------------------------------------------------------
+# cli-awesomeness
+# -------------------------------------------------------
+
+# NOTE: functions cannot have `_` in the name:
+#   add-date() --> OK
+#   add_date() --> ERROR
+
+gitclonelight() {
+  local script="$PATH_CLIA_SCRIPTS/gitclonelight.bash"
+  [ -n "$PATH_CLIA_SCRIPTS" ] && [ -f "$script" ] || return 1
+  source "$script"
+}
+
+add-date() {
+  local script="$PATH_CLIA_SCRIPTS/add_date.py"
+  [ -n "$PATH_CLIA_SCRIPTS" ] && [ -f "$script" ] || return 1
+  source "$script"
+}
+
+# -------------------------------------------------------
+# monollm
+# -------------------------------------------------------
+
+gcm() {
+  local dir="$PATH_MONOLM/examples"
+  local script="$dir/git_commit.py"
+  [ -n "$dir" ] && [ -f "$script" ] || return 1
+  git diff --cached | python "$script"
+}
+
