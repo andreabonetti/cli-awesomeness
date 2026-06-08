@@ -48,6 +48,11 @@ alias glg='git log --graph --oneline --all'
 alias gll_today='gitll --since="1 day ago"'
 alias gll_week='gitll --since="1 week ago"'
 
+# github
+alias gil='gh issue list --state all'
+alias gpr='gh pr list --state all'
+alias giv='gh issue view' # usage: giv ‹issue_number>
+
 # svn
 alias svns='svn status'
 alias svnsv='svn status | grep -v "^     K"' # not showing files that are only locked
