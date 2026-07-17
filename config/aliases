@@ -132,9 +132,9 @@ alias quarto_export_html='quarto_render_html'
 alias sc='screen'
 
 # opencode
-alias opencode_docker=''
+alias opencode_docker='docker run -it --rm -v "$(pwd)":/workspace -w /workspace my-opencode'
 
-docker run -it --rm -v "$(pwd)":/workspace -w /workspace my-opencode
+
 
 # misc
 alias ..='cd ..' # change directory
