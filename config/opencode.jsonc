@@ -1,0 +1,51 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  // permissions
+  "permission": {
+    "bash": {
+      // ask for everything
+      "*": "ask",
+      // exceptions
+      // ...tools
+      "edit": "allow",
+      "write": "allow",
+      "read": "allow",
+      "grep": "allow",
+      "glob": "allow",
+      "apply_patch": "allow",
+      "skill": "allow",
+      "todowrite": "allow",
+      "webfetch": "allow",
+      "websearch": "allow",
+      "question": "allow",
+      // ...bash
+      "ls *": "allow",
+      "cat *": "allow",
+      "head *": "allow",
+      "tail *": "allow",
+      "find *": "allow",
+      // ...git
+      "git status *": "allow",
+      "git diff *": "allow",
+      "git log *": "allow",
+      // ...apps
+      "pytest *": "allow",
+      "ruff *": "allow"
+    }
+  },
+  // local model providers (e.g., llama-cpp)
+  "provider": {
+    "local": {
+      "npm": "@ai-sdk/openai-compatible",
+      "options": {
+        "name": "Local Llama",
+        "baseURL": "http://localhost:8080/v1",
+        "apiKey": "dummy"
+      },
+      "models": {
+        "llama": {}
+      }
+    }
+  },
+  "model": "local/llama"
+}
