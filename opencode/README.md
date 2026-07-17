@@ -1,6 +1,6 @@
 # OpenCode Environment
 
-A Docker environment for running [OpenCode](https://opencode.ai) in an isolated container.
+A Docker environment for running OpenCode in an isolated container.
 
 ## Configuration
 

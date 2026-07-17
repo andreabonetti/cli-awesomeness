@@ -13,7 +13,9 @@ Config files aka dot files:
 - [aliases](config/aliases): useful aliases
 - [bash_profile](config/bash_profile): sourcing [bashrc](config/bashrc)
 - [bashrc](config/bashrc): useful bash customization
-- [bash_profile](config/bash_profile): useful aliases
 - [screenrc](config/screenrc): `screenrc` customization
 - [tmux.conf](config/tmux.conf): `tmux` customization
 
+## opencode
+
+A Docker environment for running OpenCode in an isolated container.
