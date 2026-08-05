@@ -142,7 +142,12 @@ alias herdr_ls='herdr_list'
 
 alias herdr_attach='herdr attach'
 
-alias herdr_kill='herdr session delete'
+herdr-kill() {
+  SESSION="${1:-main}"
+  herdr session stop "$SESSION"
+  herdr session delete "$SESSION"
+}
+alias herdr_kill='herdr-kill'
 
 alias herdr_reload_config='herdr server reload-config'
 alias herdr_config='herdr_reload_config'
