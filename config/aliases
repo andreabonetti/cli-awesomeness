@@ -135,12 +135,12 @@ alias sc='screen'
 alias opencode_docker='docker run -it --rm -v "$(pwd)":/workspace -w /workspace my-opencode'
 
 # herdr
-alias herdr_create='herdr session start'
+alias herdr_attach='herdr session attach'
+alias herdr_create='herdr_attach'
 
 alias herdr_list='herdr session list'
 alias herdr_ls='herdr_list'
 
-alias herdr_attach='herdr attach'
 
 herdr-kill() {
   SESSION="${1:-main}"
