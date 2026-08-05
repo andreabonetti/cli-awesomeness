@@ -10,4 +10,6 @@ RUN npm install -g opencode-ai
 
 WORKDIR /workspace
 
+COPY opencode.jsonc /root/.config/opencode/
+
 CMD ["opencode"]
