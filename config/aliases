@@ -134,7 +134,19 @@ alias sc='screen'
 # opencode
 alias opencode_docker='docker run -it --rm -v "$(pwd)":/workspace -w /workspace my-opencode'
 
+# herdr
+alias herdr_create='herdr session start'
 
+alias herdr_list='herdr session list'
+alias herdr_ls='herdr_list'
+
+alias herdr_attach='herdr attach'
+
+alias herdr_kill='herdr session delete'
+
+alias herdr_reload_config='herdr server reload-config'
+alias herdr_config='herdr_reload_config'
+alias herdr_reload='herdr_reload_config'
 
 # misc
 alias ..='cd ..' # change directory

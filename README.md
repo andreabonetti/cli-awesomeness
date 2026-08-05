@@ -15,7 +15,5 @@ Config files aka dot files:
 - [bashrc](config/bashrc): useful bash customization
 - [screenrc](config/screenrc): `screenrc` customization
 - [tmux.conf](config/tmux.conf): `tmux` customization
-
-## opencode
-
-A Docker environment for running OpenCode in an isolated container.
+- [opencode](config/opencode/): a Docker environment for running OpenCode in an isolated container
+- [herdr](config/herdr): `herdr` customization
