@@ -1,5 +1,5 @@
 docker run -it --rm \
-    -v "$(pwd)":/workspace \
     -w /workspace \
+    -v "$(pwd)":/workspace \
     --entrypoint /bin/bash \
     my-opencode

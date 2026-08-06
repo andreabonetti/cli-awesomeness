@@ -12,4 +12,4 @@ WORKDIR /workspace
 
 COPY opencode.jsonc /root/.config/opencode/
 
-CMD ["opencode"]
+RUN echo "export YOUR_API_KEY_NAME=your_actual_api_key_here" >> /root/.bashrc
