@@ -6,6 +6,7 @@ RUN apt-get update && apt-get install -y \
     less \
     vim \
     python3-venv \
+    tree \
  && rm -rf /var/lib/apt/lists/*
 
 RUN npm install -g opencode-ai
