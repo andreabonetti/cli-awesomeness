@@ -154,8 +154,13 @@ alias herdr_config='herdr_reload_config'
 alias herdr_reload='herdr_reload_config'
 
 # docker
+docker-build() {
+  IMAGE="${1:-main}"
+  docker build -t "$IMAGE" .
+}
+alias docker_build='docker-build'
 alias docker_ls='docker ps -a'
-alias docker_restart='docker restart'
+alias docker_stop='docker stop'
 
 # misc
 alias ..='cd ..' # change directory
