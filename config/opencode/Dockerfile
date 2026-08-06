@@ -14,3 +14,6 @@ RUN npm install -g opencode-ai
 WORKDIR /workspace
 
 COPY opencode.jsonc /root/.config/opencode/
+
+RUN npx -y skills@latest add mattpocock/skills -g -a opencode
+
