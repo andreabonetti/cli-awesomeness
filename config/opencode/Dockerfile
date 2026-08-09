@@ -15,5 +15,5 @@ WORKDIR /workspace
 
 COPY opencode.jsonc /root/.config/opencode/
 
-RUN npx -y skills@latest add mattpocock/skills -g -a opencode
+RUN npx -y skills@latest add mattpocock/skills --all -g -a opencode
 
