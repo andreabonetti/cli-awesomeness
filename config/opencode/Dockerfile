@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y \
     tree \
  && rm -rf /var/lib/apt/lists/*
 
-RUN npm install -g opencode-ai
+RUN npm install -g @opencode/cli
 
 WORKDIR /workspace
 
