@@ -1,51 +1,54 @@
+
 {
   "$schema": "https://opencode.ai/config.json",
   // ==================================================
   // permissions
   // ==================================================
-  "permission": {
-    "bash": {
-      // ask for everything
-      "*": "ask",
-      // exceptions
-      // ...tools
-      "edit": "allow",
-      "write": "allow",
-      "read": "allow",
-      "grep": "allow",
-      "glob": "allow",
-      "mkdir *": "allow",
-      "apply_patch": "allow",
-      "skill": "allow",
-      "todowrite": "allow",
-      "webfetch": "allow",
-      "websearch": "allow",
-      "question": "allow",
-      // ...bash
-      "ls *": "allow",
-      "cat *": "allow",
-      "head *": "allow",
-      "tail *": "allow",
-      "find *": "allow",
-      // ...git
-      "git status *": "allow",
-      "git diff *": "allow",
-      "git log *": "allow",
-      "git show *": "allow",
-      // ...apps
-      "pytest *": "allow",
-      "ruff *": "allow"
-    }
-  },
+  "permissions": [
+    // Ask for all shell commands by default
+    {
+      "action": "shell",
+      "resource": "*",
+      "effect": "ask"
+    },
+
+    // Tools
+    { "action": "edit", "resource": "*", "effect": "allow" },
+    { "action": "read", "resource": "*", "effect": "allow" },
+    { "action": "grep", "resource": "*", "effect": "allow" },
+    { "action": "glob", "resource": "*", "effect": "allow" },
+    { "action": "skill", "resource": "*", "effect": "allow" },
+    { "action": "question", "resource": "*", "effect": "allow" },
+    { "action": "webfetch", "resource": "*", "effect": "allow" },
+    { "action": "websearch", "resource": "*", "effect": "allow" },
+
+    // Shell exceptions
+    { "action": "shell", "resource": "mkdir *", "effect": "allow" },
+    { "action": "shell", "resource": "ls *", "effect": "allow" },
+    { "action": "shell", "resource": "cat *", "effect": "allow" },
+    { "action": "shell", "resource": "head *", "effect": "allow" },
+    { "action": "shell", "resource": "tail *", "effect": "allow" },
+    { "action": "shell", "resource": "find *", "effect": "allow" },
+
+    // Git
+    { "action": "shell", "resource": "git status *", "effect": "allow" },
+    { "action": "shell", "resource": "git diff *", "effect": "allow" },
+    { "action": "shell", "resource": "git log *", "effect": "allow" },
+    { "action": "shell", "resource": "git show *", "effect": "allow" },
+
+    // Development
+    { "action": "shell", "resource": "pytest *", "effect": "allow" },
+    { "action": "shell", "resource": "ruff *", "effect": "allow" }
+  ],
+
   // ==================================================
   // models
   // ==================================================
   "model": "deepseek/deepseek-v4-pro",
   "small_model": "deepseek/deepseek-v4-flash",
+
   // ==================================================
-  // providers:
-  // - local (running on your machine)
-  // - deepseek
+  // providers
   // ==================================================
   "provider": {
     "local": {
@@ -72,6 +75,7 @@
       }
     }
   },
+
   // ==================================================
   // plugins
   // ==================================================
